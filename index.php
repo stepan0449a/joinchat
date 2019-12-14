@@ -20,7 +20,18 @@ $logged_in = isset($_COOKIE['logged_in']);
     <link rel="shortcut icon" type="image/ico" href="assets/img/favicon.png" />
 
     <!--====== STYLESHEETS ======-->
-    <link media="all" href="assets/css/plugins.css" rel="stylesheet">
+<!--    <link media="all" href="assets/css/plugins.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" integrity="sha256-/O+WvT2Eeb1RIU6iMItEhi5xlHTCLHg2HgLmVGFWyW8=" crossorigin="anonymous" /><!-- assets/css/plugins/normalize.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" integrity="sha256-1hIhSlowg4vqaFZ/bikPMfEGwSgM0FtIs7mx1PADHCk=" crossorigin="anonymous" /><!-- assets/css/plugins/animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css" integrity="sha256-K2yDiYk0B1WE0j4NbUVdkEYt5GYBvLwptIlUkg3RLhk=" crossorigin="anonymous" /><!-- assets/css/plugins/odometer.css -->
+    <link media="all" href="assets/css/plugins/modal-video.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.3/venobox.min.css" integrity="sha256-aIUopUhulONZ3xR+zS2HnUF+pTbxAXIYuzd//lwefvk=" crossorigin="anonymous" /><!--assets/css/plugins/venobox.css-->
+    <link media="all" href="assets/css/plugins/owl.carousel.css" rel="stylesheet">
+    <link media="all" href="assets/css/plugins/stellarnav.min.css" rel="stylesheet">
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css --  integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" -->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" /> <!--assets/css/plugins/bootstrap.min.css-->
+
+    <link media="all" href="assets/css/" rel="stylesheet">
     <link media="all" href="assets/css/icons.css" rel="stylesheet">
     <link media="all" href="assets/css/typography.css" rel="stylesheet">
     <link media="all" href="assets/css/app.css" rel="stylesheet">
@@ -303,7 +314,7 @@ $logged_in = isset($_COOKIE['logged_in']);
                 </div> -->
                 <div class="welcome-layer-4 hidden-sm hidden-xs">
                     <div class="home4-layer-1">
-                        <img src="assets/img/join/home.png" alt="">
+                        <img src="assets/img/join/home.webp" alt="">
                         <div class="video-button item-center"><button class="video-popup" data-video-id="0YiPqNrXs7w"><i class="fa fa-play"></i></button></div>
                     </div>
                 </div>
@@ -320,7 +331,7 @@ $logged_in = isset($_COOKIE['logged_in']);
             <div class="row">
                 <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12">
                     <div class="area-image-content sm-mb50 xs-mb50 wow fadeInRight" data-wow-delay="0.3s">
-                        <img class="lazy" data-src="assets/img/about/about-mockup.png" alt="">
+                        <img class="lazy" data-src="assets/img/about/about-mockup.webp" alt="">
                     </div>
                 </div>
                 <div class="col-md-5  col-lg-5 col-sm-12 col-xs-12">
@@ -466,25 +477,25 @@ $logged_in = isset($_COOKIE['logged_in']);
                     <div class="col-md-8 col-sm-6 col-xs-12">
                         <div class="screenshot-slider">
                             <div class="single-screenshot">
-                                <img class="lazy" data-src="assets/img/screenshots/screenshot-1.png" alt="">
+                                <img class="lazy" data-src="assets/img/screenshots/screenshot-1.webp" alt="">
                             </div>
                             <div class="single-screenshot">
-                                <img class="lazy" data-src="assets/img/screenshots/screenshot-2.png" alt="">
+                                <img class="lazy" data-src="assets/img/screenshots/screenshot-2.webp" alt="">
                             </div>
                             <div class="single-screenshot">
-                                <img class="lazy" data-src="assets/img/screenshots/screenshot-3.png" alt="">
+                                <img class="lazy" data-src="assets/img/screenshots/screenshot-3.webp" alt="">
                             </div>
                             <div class="single-screenshot">
-                                <img class="lazy" data-src="assets/img/screenshots/screenshot-4.png" alt="">
+                                <img class="lazy" data-src="assets/img/screenshots/screenshot-4.webp" alt="">
                             </div>
                             <div class="single-screenshot">
-                                <img class="lazy" data-src="assets/img/screenshots/screenshot-5.png" alt="">
+                                <img class="lazy" data-src="assets/img/screenshots/screenshot-5.webp" alt="">
                             </div>
                             <div class="single-screenshot">
-                                <img class="lazy" data-src="assets/img/screenshots/screenshot-6.png" alt="">
+                                <img class="lazy" data-src="assets/img/screenshots/screenshot-6.webp" alt="">
                             </div>
                             <div class="single-screenshot">
-                                <img class="lazy" data-src="assets/img/screenshots/screenshot-7.png" alt="">
+                                <img class="lazy" data-src="assets/img/screenshots/screenshot-7.webp" alt="">
                             </div>
                         </div>
                     </div>
@@ -678,7 +689,7 @@ $logged_in = isset($_COOKIE['logged_in']);
                     <div class="area-image-content hidden-sm hidden-xs wow fadeIn" data-wow-delay="0.6s">
                         <div class="goal-layers">
                             <div class="goal-layer-1"><img class="lazy" data-src="assets/img/mockups/goal-mockup-2.png" alt=""></div>
-                            <div class="goal-layer-2" data-parallax='{"y": 180}'><img class="lazy" data-src="assets/img/mockups/goal-mockup-1.png" alt=""></div>
+                            <div class="goal-layer-2" data-parallax='{"y": 180}'><img class="lazy" data-src="assets/img/mockups/goal-mockup-1.webp" alt=""></div>
                             <div class="goal-layer-3" data-parallax='{"y": 70}'><img class="lazy" data-src="assets/img/mockups/goal-dots-shape.png" alt=""></div>
                         </div>
                     </div>
@@ -1095,15 +1106,15 @@ $logged_in = isset($_COOKIE['logged_in']);
     <!--FOOER AREA END-->
 
     <!--====== SCRIPTS JS ======-->
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <!--    old src assets/js/vendor/jquery-1.12.4.min.js -->
-    <script src="assets/js/vendor/bootstrap.min.js"></script>
-    <!--    old src assets/js/vendor/bootstrap.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js" integrity="sha256-Cr6N6zNN4bp0OwTQOZ6Z66M2r+2dpy/EwKMCyZ+SOMg=" crossorigin="anonymous"></script>    <!--    old src assets/js/vendor/bootstrap.min.js -->
 
     <!--====== PLUGINS JS ======-->
-    <script src="assets/js/vendor/jquery.easing.1.3.js"></script><!--old src assets/js/vendor/jquery.easing.1.3.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.js" integrity="sha256-B1f3/25falgZIqXi1CxeDPdHXYgIhamALovdXkGI3TQ=" crossorigin="anonymous"></script>
+    <!--old src assets/js/vendor/jquery.easing.1.3.js-->
 
-    <script src="assets/js/vendor/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js" integrity="sha256-91c9XEM8yFH2Mn9fn8yQaNRvJsEruL7Hctr6JiIY7Uw=" crossorigin="anonymous"></script>
     <!-- old src assets/js/vendor/jquery-migrate-1.2.1.min.js  -->
     <script src="assets/js/vendor/jquery.appear.js"></script>
     <!--    old src assets/js/vendor/jquery.appear.js -->
@@ -1111,18 +1122,18 @@ $logged_in = isset($_COOKIE['logged_in']);
 
     <script src="assets/js/owl.carousel.min.js"></script>
 <!--    https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.1.0/isotope.pkgd.js  --integrity="sha256-sbGc//JgEOwalULNvDFBySfaM4CIVAPh2amXzDid4d0=" crossorigin="anonymous"-->
-    <script src="assets/js/isotope.pkgd.min.js"></script> <!-- assets/js/isotope.pkgd.min.js -->
-    <script src="assets/js/stellar.js"></script> <!-- assets/js/stellar.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.1.0/isotope.pkgd.min.js" integrity="sha256-FMeghMcnGpnpncZZGzVhmKZeSJonV408+2z2js3Veg4=" crossorigin="anonymous"></script> <!-- assets/js/isotope.pkgd.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js" integrity="sha256-aQ6KGDKk7w8XQNZsQaQnbfeC//XPUIphSp/X/ZEwtV0=" crossorigin="anonymous"></script><!-- assets/js/stellar.js -->
 <!--    <script src="assets/js/jquery.parallax-layer-scroll.js"></script>-->
 <!--    <script src="assets/js/chaffle.min.js"></script>-->
-    <script  src="assets/js/anime.min.js"></script><!-- old src -- assets/js/anime.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js" integrity="sha256-eBPyH/yKtanEgIozyunmI0tKs7FCRaiQC91ih5ZCB3w=" crossorigin="anonymous"></script> <!-- old src -- assets/js/anime.min.js -->
     <script  src="assets/js/jquery-modal-video.min.js"></script>
-    <script  src="assets/js/venobox.min.js"></script><!-- assets/js/venobox.min.js -- src old -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.3/venobox.min.js" integrity="sha256-vD6deUu3WkP35ZI4Cw5cBRFo787G6/UNCDsnQJ1+aFk=" crossorigin="anonymous"></script><!-- assets/js/venobox.min.js -- src old -->
     <script  src="assets/js/stellarnav.min.js"></script>
-    <script  src="assets/js/jquery.sticky.js"></script><!-- assets/js/jquery.sticky.js  -->
-    <script  src="assets/js/wow.min.js"></script><!-- assets/js/wow.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha256-9p9wUORIjnIRp9PAyZGxql6KgJRNiH04y+8V4JjUhn0=" crossorigin="anonymous"></script><!-- assets/js/jquery.sticky.js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script><!-- assets/js/wow.min.js -->
     <script  src="assets/js/placeholdem.min.js"></script>
-    <script  src="assets/js/odometer.min.js"></script><!-- assets/js/odometer.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js" integrity="sha256-65R1G5irU1VT+k8L4coqgd3saSvO/Wufson/w+v2Idw=" crossorigin="anonymous"></script><!-- assets/js/odometer.min.js -->
     <script  src="assets/js/contact-form.js"></script>
     <script  src="assets/js/footer-reveal.min.js"></script>
     <script  src="assets/js/ResizeSensor.min.js"></script>
