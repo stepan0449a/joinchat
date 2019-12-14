@@ -1,0 +1,46 @@
+{
+  "name": "mark",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "0d08dbb1dd648a43bdea81b7e6c9e036",
+      "css": "location",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "c91098f07ff0df45b3f8666b72b75801",
+      "css": "phone",
+      "code": 59395,
+      "src": "elusive"
+    },
+    {
+      "uid": "77b3693facc3d803417105997b4ffe96",
+      "css": "facebook-1",
+      "code": 59398,
+      "src": "typicons"
+    },
+    {
+      "uid": "4c1ef492f1d2c39a2250ae457cee2a6e",
+      "css": "instagram",
+      "code": 61805,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "199c44bca402ec5a6351f75ba5228375",
+      "css": "dribbble",
+      "code": 61821,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "dad4e7f8dc2e57c92cffc0231202d9a0",
+      "css": "instagram-1",
+      "code": 62238,
+      "src": "brandico"
+    }
+  ]
+}

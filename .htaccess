@@ -1,0 +1,10 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www.joinchat\.us$ [NC]
+RewriteRule ^(.*)$ https://joinchat.us/$1 [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/food/?$ [OR]
+RewriteCond %{REQUEST_URI} ^/fooddemo/?$ [OR]
+RewriteCond %{REQUEST_URI} ^/chat-bot/?$
+RewriteRule ^(.*)$ https://service.joinchat.us/$1 [R=301,L]
