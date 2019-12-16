@@ -1,5 +1,7 @@
 <?php
 //var_dump($_COOKIE);
+header("Cache-Control: public");
+header("Expires: " . date("r", time() + 120));
 $logged_in = isset($_COOKIE['logged_in']);
 ?>
 <!doctype html>
@@ -51,16 +53,14 @@ $logged_in = isset($_COOKIE['logged_in']);
         <![endif]-->
 
 <!-- Yandex.Metrika counter -->
-<script defer="defer" type="text/javascript" src="assets/js/analitycs/yandex-metrika-counter.js">
-
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/55160251" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!--<script defer="defer" type="text/javascript" src="assets/js/analitycs/yandex-metrika-counter.js"></script>-->
+ <noscript><div><img src="https://mc.yandex.ru/watch/55160251" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
-<script defer="defer" src="https://www.googletagmanager.com/gtag/js?id=UA-137853582-1"></script>
-<script defer="defer" type="text/javascript" src="assets/js/analitycs/gtag.js"></script>
+<!--<script defer="defer" src="https://www.googletagmanager.com/gtag/js?id=UA-137853582-1"></script>-->
+<!--<script defer="defer" type="text/javascript" src="assets/js/analitycs/gtag.js"></script>-->
 <!-- Google Tag Manager -->
-<script defer="defer" src="assets/js/analitycs/google-tag-manager.js"></script>
+<!--<script defer="defer" src="assets/js/analitycs/google-tag-manager.js"></script>-->
 <!-- End Google Tag Manager -->
 
 <!--lazyload-->
@@ -382,7 +382,7 @@ $logged_in = isset($_COOKIE['logged_in']);
                     <div class="col-md-8 col-sm-6 col-xs-12">
                         <div class="screenshot-slider">
                             <div class="single-screenshot">
-                                <img class="lazy" data-src="assets/img/screenshots/screenshot-1.png" alt="">
+                                <img class="lazy" data-src="assets/img/screenshots/screenshot-1.webp" alt="">
                             </div>
                             <div class="single-screenshot">
                                 <img class="lazy" data-src="assets/img/screenshots/screenshot-2.png" alt="">
@@ -904,7 +904,7 @@ $logged_in = isset($_COOKIE['logged_in']);
     <!--FAQS AREA END-->
 
     <!--CONTACT AREA-->
-    <section class="contact-area padding-100-50 gray-bg" id="contact">
+    <section class="contact-area padding-100-50 gray-bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 col-sm-12 col-xs-12">
@@ -939,7 +939,7 @@ $logged_in = isset($_COOKIE['logged_in']);
                             <div class="row">
                                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                                     <div class="form-group" id="name-field">
-                                        <div class="form-input">
+                                        <div class="form-input" id="contact">
                                             <label for="form-name">Ваше имя</label>
                                             <input type="text" class="form-control" id="form-name" name="form-name" placeholder="Иван Иванов" required>
                                         </div>
@@ -1011,12 +1011,12 @@ $logged_in = isset($_COOKIE['logged_in']);
     <!--FOOER AREA END-->
 
     <!--====== SCRIPTS JS ======-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <!--    old src assets/js/vendor/jquery-1.12.4.min.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js" integrity="sha256-Cr6N6zNN4bp0OwTQOZ6Z66M2r+2dpy/EwKMCyZ+SOMg=" crossorigin="anonymous"></script>    <!--    old src assets/js/vendor/bootstrap.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-Cr6N6zNN4bp0OwTQOZ6Z66M2r+2dpy/EwKMCyZ+SOMg=" crossorigin="anonymous"></script>    <!--    old src assets/js/vendor/bootstrap.min.js -->
 
     <!--====== PLUGINS JS ======-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.js" integrity="sha256-B1f3/25falgZIqXi1CxeDPdHXYgIhamALovdXkGI3TQ=" crossorigin="anonymous"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.js" integrity="sha256-B1f3/25falgZIqXi1CxeDPdHXYgIhamALovdXkGI3TQ=" crossorigin="anonymous"></script>
     <!--old src assets/js/vendor/jquery.easing.1.3.js-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js" integrity="sha256-91c9XEM8yFH2Mn9fn8yQaNRvJsEruL7Hctr6JiIY7Uw=" crossorigin="anonymous"></script>
@@ -1027,25 +1027,25 @@ $logged_in = isset($_COOKIE['logged_in']);
 
     <script src="assets/js/owl.carousel.min.js"></script>
 <!--    https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.1.0/isotope.pkgd.js  --integrity="sha256-sbGc//JgEOwalULNvDFBySfaM4CIVAPh2amXzDid4d0=" crossorigin="anonymous"-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.1.0/isotope.pkgd.min.js" integrity="sha256-FMeghMcnGpnpncZZGzVhmKZeSJonV408+2z2js3Veg4=" crossorigin="anonymous"></script> <!-- assets/js/isotope.pkgd.min.js -->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.1.0/isotope.pkgd.min.js" integrity="sha256-FMeghMcnGpnpncZZGzVhmKZeSJonV408+2z2js3Veg4=" crossorigin="anonymous"></script> <!-- assets/js/isotope.pkgd.min.js -->-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js" integrity="sha256-aQ6KGDKk7w8XQNZsQaQnbfeC//XPUIphSp/X/ZEwtV0=" crossorigin="anonymous"></script><!-- assets/js/stellar.js -->
     <script src="assets/js/jquery.parallax-layer-scroll.js"></script>
 <!--    <script src="assets/js/chaffle.min.js"></script>-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js" integrity="sha256-eBPyH/yKtanEgIozyunmI0tKs7FCRaiQC91ih5ZCB3w=" crossorigin="anonymous"></script> <!-- old src -- assets/js/anime.min.js -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js" integrity="sha256-eBPyH/yKtanEgIozyunmI0tKs7FCRaiQC91ih5ZCB3w=" crossorigin="anonymous"></script> <!-- old src -- assets/js/anime.min.js -->
     <script  src="assets/js/jquery-modal-video.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.3/venobox.min.js" integrity="sha256-vD6deUu3WkP35ZI4Cw5cBRFo787G6/UNCDsnQJ1+aFk=" crossorigin="anonymous"></script><!-- assets/js/venobox.min.js -- src old -->
-    <script  src="assets/js/stellarnav.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.3/venobox.min.js" integrity="sha256-vD6deUu3WkP35ZI4Cw5cBRFo787G6/UNCDsnQJ1+aFk=" crossorigin="anonymous"></script><!-- assets/js/venobox.min.js -- src old -->
+    <script src="assets/js/stellarnav.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha256-9p9wUORIjnIRp9PAyZGxql6KgJRNiH04y+8V4JjUhn0=" crossorigin="anonymous"></script><!-- assets/js/jquery.sticky.js  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script><!-- assets/js/wow.min.js -->
-    <script  src="assets/js/placeholdem.min.js"></script>
-    <script  src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js" integrity="sha256-65R1G5irU1VT+k8L4coqgd3saSvO/Wufson/w+v2Idw=" crossorigin="anonymous"></script><!-- assets/js/odometer.min.js -->
-    <script  src="assets/js/contact-form.js"></script>
-    <script  src="assets/js/footer-reveal.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script><!-- assets/js/wow.min.js -->
+    <script defer  src="assets/js/placeholdem.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js" integrity="sha256-65R1G5irU1VT+k8L4coqgd3saSvO/Wufson/w+v2Idw=" crossorigin="anonymous"></script><!-- assets/js/odometer.min.js -->
+    <script defer src="assets/js/contact-form.js"></script>
+    <script async src="assets/js/footer-reveal.min.js"></script>
     <script   src="assets/js/ResizeSensor.min.js"></script>
-    <script  src="assets/js/theia-sticky-sidebar.min.js"></script>
+    <script async src="assets/js/theia-sticky-sidebar.min.js"></script>
 
     <!--===== ACTIVE JS=====-->
-    <script src="assets/js/main.js"></script>
+    <script async src="assets/js/main.js"></script>
 
 </body>
 

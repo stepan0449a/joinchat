@@ -6,7 +6,7 @@
   src:url("../../fonts/dripicons-v2.eot?") format("embedded-opentype"),
     url("../../fonts/dripicons-v2.woff") format("woff"),
     url("../../fonts/dripicons-v2.ttf") format("truetype"),
-    url("../../fonts/dripicons-v2.svg") format("svg");
+    local('dripicons-v2'), url("../../fonts/dripicons-v2.svg") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

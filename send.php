@@ -2,6 +2,7 @@
 
 if(isset($_POST['submit'])){
     $to = "amemorypro@gmail.com";
+//  $to = "jinsike123@gmail.com";
     $from = $_POST['form-email'] ? : "Неизвестный email";
     $first_name = $_POST['form-name'] ? : "Неизвестное имя";
     $subject = $_POST['form-phone'] ? : "Неизвестная тема";

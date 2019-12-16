@@ -9,7 +9,7 @@
   src: url("../../fonts/Flaticon-essential.eot?") format("embedded-opentype"),
        url("../../fonts/Flaticon-essential.woff") format("woff"),
        url("../../fonts/Flaticon-essential.ttf") format("truetype"),
-       url("../../fonts/Flaticon-essential.svg") format("svg");
+       local('Fl-essential'), url("../../fonts/Flaticon-essential.svg") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "Fl-essential";
-    src: url("../../fonts/Flaticon-essential.svg") format("svg");
+    local('Fl-essential'),src: url("../../fonts/Flaticon-essential.svg") format("svg");
     font-display: swap;
   }
 }
