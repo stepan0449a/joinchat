@@ -21,18 +21,17 @@ $logged_in = isset($_COOKIE['logged_in']);
 
     <!--====== STYLESHEETS ======-->
 <!--    <link media="all" href="assets/css/plugins.css" rel="stylesheet">-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" integrity="sha256-/O+WvT2Eeb1RIU6iMItEhi5xlHTCLHg2HgLmVGFWyW8=" crossorigin="anonymous" /><!-- assets/css/plugins/normalize.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" integrity="sha256-1hIhSlowg4vqaFZ/bikPMfEGwSgM0FtIs7mx1PADHCk=" crossorigin="anonymous" /><!-- assets/css/plugins/animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css" integrity="sha256-K2yDiYk0B1WE0j4NbUVdkEYt5GYBvLwptIlUkg3RLhk=" crossorigin="anonymous" /><!-- assets/css/plugins/odometer.css -->
-    <link media="all" href="assets/css/plugins/modal-video.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.3/venobox.min.css" integrity="sha256-aIUopUhulONZ3xR+zS2HnUF+pTbxAXIYuzd//lwefvk=" crossorigin="anonymous" /><!--assets/css/plugins/venobox.css-->
-    <link media="all" href="assets/css/plugins/owl.carousel.css" rel="stylesheet">
+    <!-- assets/css/plugins/normalize.css -->
+    <!-- assets/css/plugins/animate.css -->
+    <!-- assets/css/plugins/odometer.css -->
+
+    <!--assets/css/plugins/venobox.css-->
+<!--    <link media="all" href="assets/css/plugins/owl.carousel.css" rel="stylesheet">-->
     <link media="all" href="assets/css/plugins/stellarnav.min.css" rel="stylesheet">
     <!-- https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css --  integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" /> <!--assets/css/plugins/bootstrap.min.css-->
 
-    <link media="all" href="assets/css/" rel="stylesheet">
-    <link media="all" href="assets/css/icons.css" rel="stylesheet">
+<!--    <link media="all" href="assets/css/icons.css" rel="stylesheet">-->
     <link media="all" href="assets/css/typography.css" rel="stylesheet">
     <link media="all" href="assets/css/app.css" rel="stylesheet">
 
@@ -41,100 +40,8 @@ $logged_in = isset($_COOKIE['logged_in']);
     <!--====== MAIN STYLESHEETS ======-->
     <link media="all" href="style.css" rel="stylesheet">
     <!-- ======   responsive ======  -->
-    <style type="text/css">
-        /*responsive*/
-        @media only screen and (min-width: 992px) and (max-width: 1200px) {
-
-            .area-title h2,
-            .area-content h3 {
-                font-size: 38px;
-            }
-
-            .faqs-mockup-1 img {
-                max-width: 86%;
-            }
-
-            .screenshot-area .owl-nav {
-                bottom: -30px;
-                left: 0;
-                position: absolute;
-            }
-
-            .single-fun-fact h3 {
-                font-size: 62px;
-            }
-
-            .single-price {
-                padding: 40px 20px;
-            }
-
-            .price-thumb-hidding {
-                padding-left: 100px;
-            }
-
-            .price-thumb-hidding img {
-                width: 80px;
-            }
-        }
-
-        @media (min-width: 768px) and (max-width: 991px) {
-            .video-promo-area .area-content {
-                padding: 0;
-            }
-
-            .area-title h2,
-            .area-content h3 {
-                font-size: 38px;
-            }
-
-            .single-fun-fact h3 {
-                font-size: 52px;
-            }
-
-        }
-
-
-        @media only screen and (max-width: 767px) {
-
-            .area-content h3,
-            .area-title h2 {
-                font-size: 24px;
-            }
-
-            .video-promo-area .area-content {
-                padding: 0;
-            }
-
-            .screenshot-slider,
-            .features-slider {
-                width: 100%;
-            }
-
-            .single-screenshot img {
-                margin: 0 auto;
-                max-height: 450px;
-                max-width: 100%;
-                text-align: center;
-            }
-
-            .screenshot-slider .owl-dots,
-            .features-slider .owl-dots {
-                margin-top: 0;
-            }
-
-            .single-fun-fact h3 {
-                font-size: 38px;
-            }
-
-        }
-
-        @media only screen and (min-width: 480px) and (max-width: 767px) {
-
-            .area-content h3,
-            .area-title h2 {
-                font-size: 32px;
-            }
-        }
+    <style media="all" type="text/css">
+        @media only screen and (min-width:992px) and (max-width:1200px){.area-content h3,.area-title h2{font-size:38px}.faqs-mockup-1 img{max-width:86%}.screenshot-area .owl-nav{bottom:-30px;left:0;position:absolute}.single-fun-fact h3{font-size:62px}.single-price{padding:40px 20px}.price-thumb-hidding{padding-left:100px}.price-thumb-hidding img{width:80px}}@media (min-width:768px) and (max-width:991px){.video-promo-area .area-content{padding:0}.area-content h3,.area-title h2{font-size:38px}.single-fun-fact h3{font-size:52px}}@media only screen and (max-width:767px){.area-content h3,.area-title h2{font-size:24px}.video-promo-area .area-content{padding:0}.features-slider,.screenshot-slider{width:100%}.single-screenshot img{margin:0 auto;max-height:450px;max-width:100%;text-align:center}.features-slider .owl-dots,.screenshot-slider .owl-dots{margin-top:0}.single-fun-fact h3{font-size:38px}}@media only screen and (min-width:480px) and (max-width:767px){.area-content h3,.area-title h2{font-size:32px}}
     </style>
 
     <!-- <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script> -->
@@ -151,7 +58,7 @@ $logged_in = isset($_COOKIE['logged_in']);
 <!-- /Yandex.Metrika counter -->
 
 <script defer="defer" src="https://www.googletagmanager.com/gtag/js?id=UA-137853582-1"></script>
-<script defer="defer" type="text/javascript" src="assets/js/analitycs/gtag.js" defer="defer"></script>
+<script defer="defer" type="text/javascript" src="assets/js/analitycs/gtag.js"></script>
 <!-- Google Tag Manager -->
 <script defer="defer" src="assets/js/analitycs/google-tag-manager.js"></script>
 <!-- End Google Tag Manager -->
@@ -211,10 +118,8 @@ $logged_in = isset($_COOKIE['logged_in']);
     })
 
 </script>
-<script type="text/javascript">
-    $(function(){ParallaxScroll.init()});var ParallaxScroll={showLogs:!1,round:1e3,init:function(){if(this._log("init"),this._inited)return this._log("Already Inited"),void(this._inited=!0);this._requestAnimationFrame=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(a,t){window.setTimeout(a,1e3/60)},this._onScroll(!0)},_inited:!1,_properties:["x","y","z","rotateX","rotateY","rotateZ","scaleX","scaleY","scaleZ","scale"],_requestAnimationFrame:null,_log:function(a){this.showLogs&&console.log("Parallax Scroll / "+a)},_onScroll:function(X){var Y=$(document).scrollTop(),Z=$(window).height();this._log("onScroll "+Y),$("[data-parallax]").each($.proxy(function(a,t){var i=$(t),o=[],c=!1,e=i.data("style");null==e&&(e=i.attr("style")||"",i.data("style",e));var l,n=[i.data("parallax")];for(l=2;i.data("parallax"+l);l++)n.push(i.data("parallax-"+l));var s=n.length;for(l=0;l<s;l++){var u=n[l],d=u["from-scroll"];null==d&&(d=Math.max(0,$(t).offset().top-Z)),d|=0;var r=u.distance,m=u["to-scroll"];null==r&&null==m&&(r=Z),r=Math.max(0|r,1);var h=u.easing,p=u["easing-return"];if(null!=h&&$.easing&&$.easing[h]||(h=null),null!=p&&$.easing&&$.easing[p]||(p=h),h){var v=u.duration;null==v&&(v=r),v=Math.max(0|v,1);var w=u["duration-return"];null==w&&(w=v),r=1;var x=i.data("current-time");null==x&&(x=0)}null==m&&(m=d+r),m|=0;var g=u.smoothness;null==g&&(g=30),g|=0,!X&&0!=g||(g=1),g|=0;var f=Y;f=Math.max(f,d),f=Math.min(f,m),h&&(null==i.data("sens")&&i.data("sens","back"),d<f&&("back"==i.data("sens")?(x=1,i.data("sens","go")):x++),f<m&&("go"==i.data("sens")?(x=1,i.data("sens","back")):x++),X&&(x=v),i.data("current-time",x)),this._properties.map($.proxy(function(a){var t=0,e=u[a];if(null!=e){"scale"==a||"scaleX"==a||"scaleY"==a||"scaleZ"==a?t=1:e|=0;var l=i.data("_"+a);null==l&&(l=t);var n=(f-d)/(m-d)*(e-t)+t,s=l+(n-l)/g;if(h&&0<x&&x<=v){var r=t;"back"==i.data("sens")&&(e=-(r=e),h=p,v=w),s=$.easing[h](null,x,r,e,v)}(s=Math.ceil(s*this.round)/this.round)==l&&n==e&&(s=e),o[a]||(o[a]=0),o[a]+=s,l!=o[a]&&(i.data("_"+a,o[a]),c=!0)}},this))}if(c){if(null!=o.z){var _=u.perspective;null==_&&(_=800);var y=i.parent();y.data("style")||y.data("style",y.attr("style")||""),y.attr("style","perspective:"+_+"px; -webkit-perspective:"+_+"px; "+y.data("style"))}null==o.scaleX&&(o.scaleX=1),null==o.scaleY&&(o.scaleY=1),null==o.scaleZ&&(o.scaleZ=1),null!=o.scale&&(o.scaleX*=o.scale,o.scaleY*=o.scale,o.scaleZ*=o.scale);var A="translate3d("+(o.x?o.x:0)+"px, "+(o.y?o.y:0)+"px, "+(o.z?o.z:0)+"px)"+" "+("rotateX("+(o.rotateX?o.rotateX:0)+"deg) rotateY("+(o.rotateY?o.rotateY:0)+"deg) rotateZ("+(o.rotateZ?o.rotateZ:0)+"deg)")+" "+("scaleX("+o.scaleX+") scaleY("+o.scaleY+") scaleZ("+o.scaleZ+")")+";";this._log(A),i.attr("style","transform:"+A+" -webkit-transform:"+A+" "+e)}},this)),window.requestAnimationFrame?window.requestAnimationFrame($.proxy(this._onScroll,this,!1)):this._requestAnimationFrame($.proxy(this._onScroll,this,!1))}};
-</script> <!-- old src -- assets/js/jquery.parallax-layer-scroll.js -->
-<script type="text/javascript">
+
+<script defer type="text/javascript">
     (function(root,factory){if(typeof define==="function"&&define.amd){define([],factory)}else if(typeof exports==="object"){module.exports=factory()}else{root.Chaffle=factory()}})(this,function(){"use strict";function extend(){var extended={};var deep=false;if(Object.prototype.toString.call(arguments[0])==="[object Boolean]"){deep=arguments[0];i++}function merge(obj){for(var prop in obj){if(Object.prototype.hasOwnProperty.call(obj,prop)){if(deep&&Object.prototype.toString.call(obj[prop])==="[object Object]"){extended[prop]=extend(true,extended[prop],obj[prop])}else{extended[prop]=obj[prop]}}}}for(var i=0;i<arguments.length;i++){var obj=arguments[i];merge(obj)}return extended}function Chaffle(element,options){var data={};var dataLang=element.getAttribute("data-chaffle");var dataSpeed=element.getAttribute("data-chaffle-speed");var dataDelay=element.getAttribute("data-chaffle-delay");if(dataLang.length!==0)data.lang=dataLang;if(dataSpeed!==null)data.speed=Number(dataSpeed);if(dataDelay!==null)data.delay=Number(dataDelay);this.options={lang:"en",speed:20,delay:100};this.options=extend(this.options,options,data);this.element=element;this.text=this.element.textContent;this.substitution="";this.state=false;this.shuffleProps=[];this.reinstateProps=[]}Chaffle.prototype={constructor:Chaffle,init:function(){var self=this;if(self.state)return;self.clearShuffleTimer();self.clearReinstateTimer();self.state=true;self.substitution="";self.shuffleProps=[];self.reinstateProps=[];var shuffleTimer=setInterval(function(){self.shuffle()},self.options.speed);var reinstateTimer=setInterval(function(){self.reinstate()},self.options.delay);self.shuffleProps=shuffleTimer;self.reinstateProps=reinstateTimer},shuffle:function(){this.element.textContent=this.substitution;var textLength=this.text.length;var substitutionLength=this.substitution.length;if(textLength-substitutionLength>0){for(var i=0;i<=textLength-substitutionLength;i++){this.element.textContent=this.element.textContent+this.randomStr()}}else{this.clearShuffleTimer()}},reinstate:function(){var textLength=this.text.length;var substitutionLength=this.substitution.length;if(substitutionLength<textLength){this.element.textContent=this.substitution=this.text.substr(0,substitutionLength+1)}else{this.clearReinstateTimer()}this.state=false},clearShuffleTimer:function(){return clearInterval(this.shuffleProps)},clearReinstateTimer:function(){return clearInterval(this.reinstateProps)},randomStr:function(){var str;switch(this.options.lang){case"en":str=String.fromCharCode(33+Math.round(Math.random()*99));break;case"ja":str=String.fromCharCode(19968+Math.round(Math.random()*80));break;case"ja-hiragana":str=String.fromCharCode(12352+Math.round(Math.random()*50));break;case"ja-katakana":str=String.fromCharCode(12448+Math.round(Math.random()*84));break;case"ua":str=String.fromCharCode(1040+Math.round(Math.random()*55));break}return str}};return Chaffle});
 </script><!-- old src -- assets/js/chaffle.min.js -->
 </head>
@@ -331,7 +236,7 @@ $logged_in = isset($_COOKIE['logged_in']);
             <div class="row">
                 <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12">
                     <div class="area-image-content sm-mb50 xs-mb50 wow fadeInRight" data-wow-delay="0.3s">
-                        <img class="lazy" data-src="assets/img/about/about-mockup.webp" alt="">
+                        <img class="lazy" data-src="assets/img/about/about-mockup.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-5  col-lg-5 col-sm-12 col-xs-12">
@@ -477,25 +382,25 @@ $logged_in = isset($_COOKIE['logged_in']);
                     <div class="col-md-8 col-sm-6 col-xs-12">
                         <div class="screenshot-slider">
                             <div class="single-screenshot">
-                                <img class="lazy" data-src="assets/img/screenshots/screenshot-1.webp" alt="">
+                                <img class="lazy" data-src="assets/img/screenshots/screenshot-1.png" alt="">
                             </div>
                             <div class="single-screenshot">
-                                <img class="lazy" data-src="assets/img/screenshots/screenshot-2.webp" alt="">
+                                <img class="lazy" data-src="assets/img/screenshots/screenshot-2.png" alt="">
                             </div>
                             <div class="single-screenshot">
-                                <img class="lazy" data-src="assets/img/screenshots/screenshot-3.webp" alt="">
+                                <img class="lazy" data-src="assets/img/screenshots/screenshot-3.png" alt="">
                             </div>
                             <div class="single-screenshot">
-                                <img class="lazy" data-src="assets/img/screenshots/screenshot-4.webp" alt="">
+                                <img class="lazy" data-src="assets/img/screenshots/screenshot-4.png" alt="">
                             </div>
                             <div class="single-screenshot">
-                                <img class="lazy" data-src="assets/img/screenshots/screenshot-5.webp" alt="">
+                                <img class="lazy" data-src="assets/img/screenshots/screenshot-5.png" alt="">
                             </div>
                             <div class="single-screenshot">
-                                <img class="lazy" data-src="assets/img/screenshots/screenshot-6.webp" alt="">
+                                <img class="lazy" data-src="assets/img/screenshots/screenshot-6.png" alt="">
                             </div>
                             <div class="single-screenshot">
-                                <img class="lazy" data-src="assets/img/screenshots/screenshot-7.webp" alt="">
+                                <img class="lazy" data-src="assets/img/screenshots/screenshot-7.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -689,8 +594,8 @@ $logged_in = isset($_COOKIE['logged_in']);
                     <div class="area-image-content hidden-sm hidden-xs wow fadeIn" data-wow-delay="0.6s">
                         <div class="goal-layers">
                             <div class="goal-layer-1"><img class="lazy" data-src="assets/img/mockups/goal-mockup-2.png" alt=""></div>
-                            <div class="goal-layer-2" data-parallax='{"y": 180}'><img class="lazy" data-src="assets/img/mockups/goal-mockup-1.webp" alt=""></div>
-                            <div class="goal-layer-3" data-parallax='{"y": 70}'><img class="lazy" data-src="assets/img/mockups/goal-dots-shape.png" alt=""></div>
+                            <div class="goal-layer-2" data-parallax='{"y": 180}'><img src="assets/img/mockups/goal-mockup-1.png" alt=""></div>
+                            <div class="goal-layer-3" data-parallax='{"y": 70}'><img src="assets/img/mockups/goal-dots-shape.png" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -1124,7 +1029,7 @@ $logged_in = isset($_COOKIE['logged_in']);
 <!--    https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.1.0/isotope.pkgd.js  --integrity="sha256-sbGc//JgEOwalULNvDFBySfaM4CIVAPh2amXzDid4d0=" crossorigin="anonymous"-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.1.0/isotope.pkgd.min.js" integrity="sha256-FMeghMcnGpnpncZZGzVhmKZeSJonV408+2z2js3Veg4=" crossorigin="anonymous"></script> <!-- assets/js/isotope.pkgd.min.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js" integrity="sha256-aQ6KGDKk7w8XQNZsQaQnbfeC//XPUIphSp/X/ZEwtV0=" crossorigin="anonymous"></script><!-- assets/js/stellar.js -->
-<!--    <script src="assets/js/jquery.parallax-layer-scroll.js"></script>-->
+    <script src="assets/js/jquery.parallax-layer-scroll.js"></script>
 <!--    <script src="assets/js/chaffle.min.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js" integrity="sha256-eBPyH/yKtanEgIozyunmI0tKs7FCRaiQC91ih5ZCB3w=" crossorigin="anonymous"></script> <!-- old src -- assets/js/anime.min.js -->
     <script  src="assets/js/jquery-modal-video.min.js"></script>
@@ -1133,10 +1038,10 @@ $logged_in = isset($_COOKIE['logged_in']);
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha256-9p9wUORIjnIRp9PAyZGxql6KgJRNiH04y+8V4JjUhn0=" crossorigin="anonymous"></script><!-- assets/js/jquery.sticky.js  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script><!-- assets/js/wow.min.js -->
     <script  src="assets/js/placeholdem.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js" integrity="sha256-65R1G5irU1VT+k8L4coqgd3saSvO/Wufson/w+v2Idw=" crossorigin="anonymous"></script><!-- assets/js/odometer.min.js -->
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js" integrity="sha256-65R1G5irU1VT+k8L4coqgd3saSvO/Wufson/w+v2Idw=" crossorigin="anonymous"></script><!-- assets/js/odometer.min.js -->
     <script  src="assets/js/contact-form.js"></script>
     <script  src="assets/js/footer-reveal.min.js"></script>
-    <script  src="assets/js/ResizeSensor.min.js"></script>
+    <script   src="assets/js/ResizeSensor.min.js"></script>
     <script  src="assets/js/theia-sticky-sidebar.min.js"></script>
 
     <!--===== ACTIVE JS=====-->

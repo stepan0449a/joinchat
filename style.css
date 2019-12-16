@@ -495,7 +495,7 @@
       color: transparent;
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
-      background-clip: text;
+
   }
   
   .process-icon {
@@ -866,9 +866,6 @@
       overflow: hidden;
       position: relative;
   }
-  
-  
-  
   .purchase-button:before {
       background: rgba(0, 0, 0, 0) linear-gradient(135deg, #5179fc 0%, #45aafd 99%) repeat scroll 0 0;
       content: "";
@@ -883,7 +880,6 @@
   }
   
   @media (max-width: 991px) {
-
       .single-price.active {
           color: #ffffff;
       }
@@ -900,6 +896,10 @@
   .single-price.active:before {
       opacity: 1;
   }
+  .single-price:hover .price-rate,
+  .single-price.active .price-rate {
+      color: #ffffff;
+  }
   
   @media (max-width: 991px) {
       .single-price.active .price-rate {
@@ -914,7 +914,7 @@
   }
   
   
-  
+
   .row-flex {
       display: flex;
       flex-flow: row wrap;
@@ -1272,7 +1272,7 @@
       border-radius: 50px;
       font-size: 14px;
       height: 60px;
-      letter-spacing: 0px;
+      letter-spacing: normal;
       padding: 12px 50px;
       position: absolute;
       right: 10px;
@@ -1309,7 +1309,7 @@
   }
   
   .member-thumb {
-      margin-bottom: 0px;
+
       position: relative;
   }
   
@@ -1403,4 +1403,5 @@ ul#nav li a {
       .about-area .area-image-content>img {
           margin-left: 0;
       }
+
   }

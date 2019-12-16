@@ -1,5 +1,15 @@
 jQuery(document).on('ready', function ($) {
     "use strict";
+    var head = $("head");
+    head.append('<link media="all" href="assets/css/icons.css" rel="stylesheet">');
+    head.append('<link media="all" href="assets/css/plugins/owl.carousel.css" rel="stylesheet">');
+    head.append('<link media="all" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" integrity="sha256-/O+WvT2Eeb1RIU6iMItEhi5xlHTCLHg2HgLmVGFWyW8=" crossorigin="anonymous" />');
+    head.append('<link media="all" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" integrity="sha256-1hIhSlowg4vqaFZ/bikPMfEGwSgM0FtIs7mx1PADHCk=" crossorigin="anonymous" />');
+    head.append('<link media="all" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css" integrity="sha256-K2yDiYk0B1WE0j4NbUVdkEYt5GYBvLwptIlUkg3RLhk=" crossorigin="anonymous" />');
+    head.append('<link media="all" href="assets/css/plugins/modal-video.min.css" rel="stylesheet">');
+    head.append('<link media="all" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.3/venobox.min.css" integrity="sha256-aIUopUhulONZ3xR+zS2HnUF+pTbxAXIYuzd//lwefvk=" crossorigin="anonymous" />');
+    //$("head").append('<link media="all" href="assets/css/icons.css" rel="stylesheet">');
+
 
     $("#nav li a").click(function () {
         $("#nav").css('display', 'none');
@@ -60,9 +70,9 @@ jQuery(document).on('ready', function ($) {
         var $totalHeight = $(window).scrollTop();
         var $scrollToTop = $(".scrolltotop");
         if ($totalHeight > 300) {
-            $(".scrolltotop").fadeIn();
+            $scrollToTop.fadeIn();
         } else {
-            $(".scrolltotop").fadeOut();
+            $scrollToTop.fadeOut();
         }
 
         if ($totalHeight + $(window).height() === $(document).height()) {
@@ -139,7 +149,7 @@ jQuery(document).on('ready', function ($) {
     /*------------------------------
         COUNTER UP
     -------------------------------*/
-    $('.odometer').appear(function (e) {
+    $('.odometer').appear(function () {
         var odo = $(".odometer");
         odo.each(function () {
             var countNumber = $(this).attr("data-count");
@@ -158,7 +168,8 @@ jQuery(document).on('ready', function ($) {
     /* -------------------------------------------------------
      PORTFOLIO FILTER SET ACTIVE CLASS FOR STYLE
     ----------------------------------------------------------*/
-    $('.portfolio-menu li').on('click', function (event) {
+    var portfolio_menu =  $('.portfolio-menu li');
+    portfolio_menu.on('click', function (event) {
         $(this).siblings('.active').removeClass('active');
         $(this).addClass('active');
         event.preventDefault();
@@ -167,7 +178,7 @@ jQuery(document).on('ready', function ($) {
     /* ------------------------------
      PORTFOLIO FILTERING
      -------------------------------- */
-    $('.portfolio-menu li').on('click', function () {
+    portfolio_menu.on('click', function () {
         $(this).addClass('active');
         var filterValue = $(this).attr('data-filter');
 
@@ -220,7 +231,7 @@ jQuery(document).on('ready', function ($) {
                     items: 4
                 },
                 1200: {
-                    items: 5
+                    items: 4
                 }
             }
         });
@@ -616,41 +627,51 @@ jQuery(document).on('ready', function ($) {
     /*---------------------------
         BLOG GALLERY SLIDER
     -----------------------------*/
-    var postCarousel = $('.posts-gallery');
-    if (postCarousel.length > 0) {
-        postCarousel.owlCarousel({
-            merge: true,
-            smartSpeed: 1000,
-            loop: true,
-            nav: true,
-            center: false,
-            dots: false,
-            navText: ['<i class="dripicons-arrow-thin-left"></i>', '<i class="dripicons-arrow-thin-right"></i>'],
-            autoplay: true,
-            autoplayTimeout: 3000,
-            margin: 0,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 1
-                },
-                1200: {
-                    items: 1
-                }
-            }
-        });
-    }
+    // var postCarousel = $('.posts-gallery');
+    // if (postCarousel.length > 0) {
+    //     postCarousel.owlCarousel({
+    //         merge: true,
+    //         smartSpeed: 1000,
+    //         loop: true,
+    //         nav: true,
+    //         center: false,
+    //         dots: false,
+    //         navText: ['<i class="dripicons-arrow-thin-left"></i>', '<i class="dripicons-arrow-thin-right"></i>'],
+    //         autoplay: true,
+    //         autoplayTimeout: 3000,
+    //         margin: 0,
+    //         responsiveClass: true,
+    //         responsive: {
+    //             0: {
+    //                 items: 1
+    //             },
+    //             600: {
+    //                 items: 1
+    //             },
+    //             1000: {
+    //                 items: 1
+    //             },
+    //             1200: {
+    //                 items: 1
+    //             }
+    //         }
+    //     });
+    // }
 
     /*-------------------------------
         PRICE TABLE ACTIVE
     ---------------------------------*/
-    $('.single-price').on('hover', function (e) {
+    // $('.single-price').on('hover', function (e) {
+    //     alert('sdf');
+    //     $('.single-price').removeClass('active');
+    //     var $this = $(this);
+    //     if (!$this.hasClass('active')) {
+    //         $this.addClass('active');
+    //     }
+    //     e.preventDefault();
+    // });
+    $('.single-price').hover(function (e) {
+
         $('.single-price').removeClass('active');
         var $this = $(this);
         if (!$this.hasClass('active')) {
