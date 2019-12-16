@@ -5,7 +5,7 @@ header("Expires: " . date("r", time() + 120));
 $logged_in = isset($_COOKIE['logged_in']);
 ?>
 <!doctype html>
-<html class="no-js" lang="ru" manifest="app.manifest>
+<html class="no-js" lang="ru">
 
 <head>
     <!--====== USEFULL META ======-->
@@ -53,14 +53,14 @@ $logged_in = isset($_COOKIE['logged_in']);
         <![endif]-->
 
 <!-- Yandex.Metrika counter -->
-<!--<script defer="defer" type="text/javascript" src="assets/js/analitycs/yandex-metrika-counter.js"></script>-->
-<!-- <noscript><div><img src="https://mc.yandex.ru/watch/55160251" style="position:absolute; left:-9999px;" alt="" /></div></noscript>-->
+<script defer="defer" type="text/javascript" src="assets/js/analitycs/yandex-metrika-counter.js"></script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/55160251" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
-<!--<script defer="defer" src="https://www.googletagmanager.com/gtag/js?id=UA-137853582-1"></script>-->
-<!--<script defer="defer" type="text/javascript" src="assets/js/analitycs/gtag.js"></script>-->
+<script defer="defer" src="https://www.googletagmanager.com/gtag/js?id=UA-137853582-1"></script>
+<script defer="defer" type="text/javascript" src="assets/js/analitycs/gtag.js"></script>
 <!-- Google Tag Manager-->
-<!--<script defer="defer" src="assets/js/analitycs/google-tag-manager.js"></script>-->
+<script defer="defer" src="assets/js/analitycs/google-tag-manager.js"></script>
 <!-- End Google Tag Manager-->
 
 <!--lazyload-->
@@ -119,7 +119,7 @@ $logged_in = isset($_COOKIE['logged_in']);
 
 </script>
 
-<script defer type="text/javascript">
+<script type="text/javascript">
     (function(root,factory){if(typeof define==="function"&&define.amd){define([],factory)}else if(typeof exports==="object"){module.exports=factory()}else{root.Chaffle=factory()}})(this,function(){"use strict";function extend(){var extended={};var deep=false;if(Object.prototype.toString.call(arguments[0])==="[object Boolean]"){deep=arguments[0];i++}function merge(obj){for(var prop in obj){if(Object.prototype.hasOwnProperty.call(obj,prop)){if(deep&&Object.prototype.toString.call(obj[prop])==="[object Object]"){extended[prop]=extend(true,extended[prop],obj[prop])}else{extended[prop]=obj[prop]}}}}for(var i=0;i<arguments.length;i++){var obj=arguments[i];merge(obj)}return extended}function Chaffle(element,options){var data={};var dataLang=element.getAttribute("data-chaffle");var dataSpeed=element.getAttribute("data-chaffle-speed");var dataDelay=element.getAttribute("data-chaffle-delay");if(dataLang.length!==0)data.lang=dataLang;if(dataSpeed!==null)data.speed=Number(dataSpeed);if(dataDelay!==null)data.delay=Number(dataDelay);this.options={lang:"en",speed:20,delay:100};this.options=extend(this.options,options,data);this.element=element;this.text=this.element.textContent;this.substitution="";this.state=false;this.shuffleProps=[];this.reinstateProps=[]}Chaffle.prototype={constructor:Chaffle,init:function(){var self=this;if(self.state)return;self.clearShuffleTimer();self.clearReinstateTimer();self.state=true;self.substitution="";self.shuffleProps=[];self.reinstateProps=[];var shuffleTimer=setInterval(function(){self.shuffle()},self.options.speed);var reinstateTimer=setInterval(function(){self.reinstate()},self.options.delay);self.shuffleProps=shuffleTimer;self.reinstateProps=reinstateTimer},shuffle:function(){this.element.textContent=this.substitution;var textLength=this.text.length;var substitutionLength=this.substitution.length;if(textLength-substitutionLength>0){for(var i=0;i<=textLength-substitutionLength;i++){this.element.textContent=this.element.textContent+this.randomStr()}}else{this.clearShuffleTimer()}},reinstate:function(){var textLength=this.text.length;var substitutionLength=this.substitution.length;if(substitutionLength<textLength){this.element.textContent=this.substitution=this.text.substr(0,substitutionLength+1)}else{this.clearReinstateTimer()}this.state=false},clearShuffleTimer:function(){return clearInterval(this.shuffleProps)},clearReinstateTimer:function(){return clearInterval(this.reinstateProps)},randomStr:function(){var str;switch(this.options.lang){case"en":str=String.fromCharCode(33+Math.round(Math.random()*99));break;case"ja":str=String.fromCharCode(19968+Math.round(Math.random()*80));break;case"ja-hiragana":str=String.fromCharCode(12352+Math.round(Math.random()*50));break;case"ja-katakana":str=String.fromCharCode(12448+Math.round(Math.random()*84));break;case"ua":str=String.fromCharCode(1040+Math.round(Math.random()*55));break}return str}};return Chaffle});
 </script><!-- old src -- assets/js/chaffle.min.js -->
 </head>
@@ -594,8 +594,8 @@ $logged_in = isset($_COOKIE['logged_in']);
                     <div class="area-image-content hidden-sm hidden-xs wow fadeIn" data-wow-delay="0.6s">
                         <div class="goal-layers">
                             <div class="goal-layer-1"><img class="lazy" data-src="assets/img/mockups/goal-mockup-2.png" alt=""></div>
-                            <div class="goal-layer-2" data-parallax='{"y": 180}'><img src="assets/img/mockups/goal-mockup-1.png" alt=""></div>
-                            <div class="goal-layer-3" data-parallax='{"y": 70}'><img src="assets/img/mockups/goal-dots-shape.png" alt=""></div>
+                            <div class="goal-layer-2" data-parallax='{"y": 180}'><img class="lazy" data-src="assets/img/mockups/goal-mockup-1.png" alt=""></div>
+                            <div class="goal-layer-3" data-parallax='{"y": 70}'><img class="lazy" data-src="assets/img/mockups/goal-dots-shape.png" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -638,7 +638,7 @@ $logged_in = isset($_COOKIE['logged_in']);
                                 <p>Я сначала сомневался, но подсчитав, что 1 продажа через чат-бота полностью его окупает, плохие мысли отпали.</p>
                             </div>
                             <div class="author-name-and-thumb">
-                                <div class="author-tumb"><img class="lazy" data-src="assets/img/testmonial/author-3.png" alt=""></div>
+                                <div class="author-tumb"><img src="assets/img/testmonial/author-3.png" alt=""></div>
                                 <h4>Иван</h4>
                                 <p>Владелец</p>
                             </div>
@@ -658,6 +658,7 @@ $logged_in = isset($_COOKIE['logged_in']);
                                 <p>Сейчас, каждый второй разработчик делает чат-ботов для Telegram. Подписался исключительно ради Viber. Мои клиенты передают спасибо!</p>
                             </div>
                             <div class="author-name-and-thumb">
+
                                 <div class="author-tumb"><img src="assets/img/testmonial/author-4.png" alt=""></div>
                                 <h4>Дмитрий</h4>
                                 <p>Директор</p>
@@ -689,7 +690,7 @@ $logged_in = isset($_COOKIE['logged_in']);
                                 <div class="single-price mb50">
                                     <div class="price-header">
                                         <div class="price-thumb-hidding">
-                                            <img src="assets/img/join/basic.png" alt="">
+                                            <img class="lazy" data-src="assets/img/join/basic.png" alt="">
                                             <div class="price-rate"><span class="currency">$</span>15<span class="currency">/Мес</span></div>
                                             <div class="price-title">Тариф Basic</div>
                                         </div>
@@ -722,7 +723,7 @@ $logged_in = isset($_COOKIE['logged_in']);
                                     <div class="sale-promo">Популярный</div>
                                     <div class="price-header">
                                         <div class="price-thumb-hidding">
-                                            <img src="assets/img/join/business.svg" alt="">
+                                            <img class="lazy" data-src="assets/img/join/business.svg" alt="">
                                             <div class="price-rate"><span class="currency">$</span>20<span class="currency">/Мес</span></div>
                                             <div class="price-title">Тариф Business</div>
                                         </div>
@@ -754,7 +755,7 @@ $logged_in = isset($_COOKIE['logged_in']);
                                 <div class="single-price mb50 active">
                                     <div class="price-header">
                                         <div class="price-thumb-hidding">
-                                            <img src="assets/img/join/motocycle.png" alt="">
+                                            <img class="lazy" data-src="assets/img/join/motocycle.png" alt="">
                                             <div class="price-rate"><span class="currency">$</span>300<span class="currency">/Мес</span><span class="currency"> + $ Price</span> </div>
                                             <div class="price-title">⚙ Докрутка</div>
                                         </div>
@@ -1029,23 +1030,23 @@ $logged_in = isset($_COOKIE['logged_in']);
 <!--    https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.1.0/isotope.pkgd.js  --integrity="sha256-sbGc//JgEOwalULNvDFBySfaM4CIVAPh2amXzDid4d0=" crossorigin="anonymous"-->
 <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.1.0/isotope.pkgd.min.js" integrity="sha256-FMeghMcnGpnpncZZGzVhmKZeSJonV408+2z2js3Veg4=" crossorigin="anonymous"></script> <!-- assets/js/isotope.pkgd.min.js -->-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js" integrity="sha256-aQ6KGDKk7w8XQNZsQaQnbfeC//XPUIphSp/X/ZEwtV0=" crossorigin="anonymous"></script><!-- assets/js/stellar.js -->
-<!--    <script src="assets/js/jquery.parallax-layer-scroll.js"></script>-->
+    <script src="assets/js/jquery.parallax-layer-scroll.js"></script>
 <!--    <script src="assets/js/chaffle.min.js"></script>-->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js" integrity="sha256-eBPyH/yKtanEgIozyunmI0tKs7FCRaiQC91ih5ZCB3w=" crossorigin="anonymous"></script> <!-- old src -- assets/js/anime.min.js -->
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js" integrity="sha256-eBPyH/yKtanEgIozyunmI0tKs7FCRaiQC91ih5ZCB3w=" crossorigin="anonymous"></script> <!-- old src -- assets/js/anime.min.js -->
     <script  src="assets/js/jquery-modal-video.min.js"></script>
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.3/venobox.min.js" integrity="sha256-vD6deUu3WkP35ZI4Cw5cBRFo787G6/UNCDsnQJ1+aFk=" crossorigin="anonymous"></script><!-- assets/js/venobox.min.js -- src old -->
     <script src="assets/js/stellarnav.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha256-9p9wUORIjnIRp9PAyZGxql6KgJRNiH04y+8V4JjUhn0=" crossorigin="anonymous"></script><!-- assets/js/jquery.sticky.js  -->
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script><!-- assets/js/wow.min.js -->
-    <script defer  src="assets/js/placeholdem.min.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script><!-- assets/js/wow.min.js -->
+    <script   src="assets/js/placeholdem.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js" integrity="sha256-65R1G5irU1VT+k8L4coqgd3saSvO/Wufson/w+v2Idw=" crossorigin="anonymous"></script><!-- assets/js/odometer.min.js -->
     <script defer src="assets/js/contact-form.js"></script>
     <script async src="assets/js/footer-reveal.min.js"></script>
     <script   src="assets/js/ResizeSensor.min.js"></script>
-    <script async src="assets/js/theia-sticky-sidebar.min.js"></script>
+    <script  src="assets/js/theia-sticky-sidebar.min.js"></script>
 
     <!--===== ACTIVE JS=====-->
-    <script async src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 
