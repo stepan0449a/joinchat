@@ -5,7 +5,7 @@ header("Expires: " . date("r", time() + 120));
 $logged_in = isset($_COOKIE['logged_in']);
 ?>
 <!doctype html>
-<html class="no-js" lang="ru">
+<html class="no-js" lang="ru" manifest="app.manifest>
 
 <head>
     <!--====== USEFULL META ======-->
@@ -54,14 +54,14 @@ $logged_in = isset($_COOKIE['logged_in']);
 
 <!-- Yandex.Metrika counter -->
 <!--<script defer="defer" type="text/javascript" src="assets/js/analitycs/yandex-metrika-counter.js"></script>-->
- <noscript><div><img src="https://mc.yandex.ru/watch/55160251" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- <noscript><div><img src="https://mc.yandex.ru/watch/55160251" style="position:absolute; left:-9999px;" alt="" /></div></noscript>-->
 <!-- /Yandex.Metrika counter -->
 
 <!--<script defer="defer" src="https://www.googletagmanager.com/gtag/js?id=UA-137853582-1"></script>-->
 <!--<script defer="defer" type="text/javascript" src="assets/js/analitycs/gtag.js"></script>-->
-<!-- Google Tag Manager -->
+<!-- Google Tag Manager-->
 <!--<script defer="defer" src="assets/js/analitycs/google-tag-manager.js"></script>-->
-<!-- End Google Tag Manager -->
+<!-- End Google Tag Manager-->
 
 <!--lazyload-->
 <script type="text/javascript" async>
@@ -1029,7 +1029,7 @@ $logged_in = isset($_COOKIE['logged_in']);
 <!--    https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.1.0/isotope.pkgd.js  --integrity="sha256-sbGc//JgEOwalULNvDFBySfaM4CIVAPh2amXzDid4d0=" crossorigin="anonymous"-->
 <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.1.0/isotope.pkgd.min.js" integrity="sha256-FMeghMcnGpnpncZZGzVhmKZeSJonV408+2z2js3Veg4=" crossorigin="anonymous"></script> <!-- assets/js/isotope.pkgd.min.js -->-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js" integrity="sha256-aQ6KGDKk7w8XQNZsQaQnbfeC//XPUIphSp/X/ZEwtV0=" crossorigin="anonymous"></script><!-- assets/js/stellar.js -->
-    <script src="assets/js/jquery.parallax-layer-scroll.js"></script>
+<!--    <script src="assets/js/jquery.parallax-layer-scroll.js"></script>-->
 <!--    <script src="assets/js/chaffle.min.js"></script>-->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js" integrity="sha256-eBPyH/yKtanEgIozyunmI0tKs7FCRaiQC91ih5ZCB3w=" crossorigin="anonymous"></script> <!-- old src -- assets/js/anime.min.js -->
     <script  src="assets/js/jquery-modal-video.min.js"></script>

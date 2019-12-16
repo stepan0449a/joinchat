@@ -1,0 +1,7 @@
+CACHE MANIFEST
+# v1 - 2011-08-13
+CACHE:
+image/ico
+# Это комментарий.
+FALLBACK:
+/ offline.html
