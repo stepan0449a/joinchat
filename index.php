@@ -28,12 +28,13 @@ $logged_in = isset($_COOKIE['logged_in']);
     <!-- assets/css/plugins/odometer.css -->
 
     <!--assets/css/plugins/venobox.css-->
-<!--    <link media="all" href="assets/css/plugins/owl.carousel.css" rel="stylesheet">-->
+    <link media="all" rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" /> <!--assets/css/plugins/bootstrap.min.css-->
+    <!--    <link media="all" href="assets/css/plugins/owl.carousel.css" rel="stylesheet">-->
     <link media="all" href="assets/css/plugins/stellarnav.min.css" rel="stylesheet">
     <!-- https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css --  integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" -->
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" /> <!--assets/css/plugins/bootstrap.min.css-->
 
 <!--    <link media="all" href="assets/css/icons.css" rel="stylesheet">-->
+
     <link media="all" href="assets/css/typography.css" rel="stylesheet">
     <link media="all" href="assets/css/app.css" rel="stylesheet">
 
@@ -1017,7 +1018,7 @@ $logged_in = isset($_COOKIE['logged_in']);
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-Cr6N6zNN4bp0OwTQOZ6Z66M2r+2dpy/EwKMCyZ+SOMg=" crossorigin="anonymous"></script>    <!--    old src assets/js/vendor/bootstrap.min.js -->
 
     <!--====== PLUGINS JS ======-->
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.js" integrity="sha256-B1f3/25falgZIqXi1CxeDPdHXYgIhamALovdXkGI3TQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.js" integrity="sha256-B1f3/25falgZIqXi1CxeDPdHXYgIhamALovdXkGI3TQ=" crossorigin="anonymous"></script>
     <!--old src assets/js/vendor/jquery.easing.1.3.js-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js" integrity="sha256-91c9XEM8yFH2Mn9fn8yQaNRvJsEruL7Hctr6JiIY7Uw=" crossorigin="anonymous"></script>
@@ -1028,22 +1029,22 @@ $logged_in = isset($_COOKIE['logged_in']);
 
     <script src="assets/js/owl.carousel.min.js"></script>
 <!--    https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.1.0/isotope.pkgd.js  --integrity="sha256-sbGc//JgEOwalULNvDFBySfaM4CIVAPh2amXzDid4d0=" crossorigin="anonymous"-->
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.1.0/isotope.pkgd.min.js" integrity="sha256-FMeghMcnGpnpncZZGzVhmKZeSJonV408+2z2js3Veg4=" crossorigin="anonymous"></script> <!-- assets/js/isotope.pkgd.min.js -->-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.1.0/isotope.pkgd.min.js" integrity="sha256-FMeghMcnGpnpncZZGzVhmKZeSJonV408+2z2js3Veg4=" crossorigin="anonymous"></script> <!-- assets/js/isotope.pkgd.min.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js" integrity="sha256-aQ6KGDKk7w8XQNZsQaQnbfeC//XPUIphSp/X/ZEwtV0=" crossorigin="anonymous"></script><!-- assets/js/stellar.js -->
     <script src="assets/js/jquery.parallax-layer-scroll.js"></script>
 <!--    <script src="assets/js/chaffle.min.js"></script>-->
-    <script  src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js" integrity="sha256-eBPyH/yKtanEgIozyunmI0tKs7FCRaiQC91ih5ZCB3w=" crossorigin="anonymous"></script> <!-- old src -- assets/js/anime.min.js -->
-    <script  src="assets/js/jquery-modal-video.min.js"></script>
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.3/venobox.min.js" integrity="sha256-vD6deUu3WkP35ZI4Cw5cBRFo787G6/UNCDsnQJ1+aFk=" crossorigin="anonymous"></script><!-- assets/js/venobox.min.js -- src old -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js" integrity="sha256-eBPyH/yKtanEgIozyunmI0tKs7FCRaiQC91ih5ZCB3w=" crossorigin="anonymous"></script> <!-- old src -- assets/js/anime.min.js -->
+    <script src="assets/js/jquery-modal-video.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.3/venobox.min.js" integrity="sha256-vD6deUu3WkP35ZI4Cw5cBRFo787G6/UNCDsnQJ1+aFk=" crossorigin="anonymous"></script><!-- assets/js/venobox.min.js -- src old -->
     <script src="assets/js/stellarnav.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha256-9p9wUORIjnIRp9PAyZGxql6KgJRNiH04y+8V4JjUhn0=" crossorigin="anonymous"></script><!-- assets/js/jquery.sticky.js  -->
-    <script  src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script><!-- assets/js/wow.min.js -->
-    <script   src="assets/js/placeholdem.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js" integrity="sha256-65R1G5irU1VT+k8L4coqgd3saSvO/Wufson/w+v2Idw=" crossorigin="anonymous"></script><!-- assets/js/odometer.min.js -->
-    <script defer src="assets/js/contact-form.js"></script>
-    <script async src="assets/js/footer-reveal.min.js"></script>
-    <script   src="assets/js/ResizeSensor.min.js"></script>
-    <script  src="assets/js/theia-sticky-sidebar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script><!-- assets/js/wow.min.js -->
+    <script src="assets/js/placeholdem.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js" integrity="sha256-65R1G5irU1VT+k8L4coqgd3saSvO/Wufson/w+v2Idw=" crossorigin="anonymous"></script><!-- assets/js/odometer.min.js -->
+    <script src="assets/js/contact-form.js"></script>
+    <script src="assets/js/footer-reveal.min.js"></script>
+    <script src="assets/js/ResizeSensor.min.js"></script>
+    <script src="assets/js/theia-sticky-sidebar.min.js"></script>
 
     <!--===== ACTIVE JS=====-->
     <script src="assets/js/main.js"></script>

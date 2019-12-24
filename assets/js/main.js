@@ -689,9 +689,14 @@ jQuery(document).on('ready', function ($) {
     /*--------------------------
         ACCORDION ACTIVE
     ---------------------------*/
-    $('#accordion-main .panel.panel-default').on('click', function (e) {
+    $('#accordion-main .panel.panel-default').click(function (e) {
         $('#accordion-main .panel.panel-default').removeClass('active');
         var $this = $(this);
+        var collapse = $this.children(".collapse");
+        $("#accordion-main .collapse").removeClass("in");
+        if (!collapse.hasClass("in")) {
+            collapse.addClass('in');
+        }
         if (!$this.hasClass('active')) {
             $this.addClass('active');
         }
