@@ -1,6 +1,7 @@
 jQuery(document).on('ready', function ($) {
     "use strict";
     var head = $("head");
+    head.append('<link media="all" href="assets/css/typography.css" rel="stylesheet">');
     head.append('<link media="all" href="assets/css/icons.css" rel="stylesheet">');
     head.append('<link media="all" href="assets/css/plugins/owl.carousel.css" rel="stylesheet">');
     head.append('<link media="all" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" integrity="sha256-/O+WvT2Eeb1RIU6iMItEhi5xlHTCLHg2HgLmVGFWyW8=" crossorigin="anonymous" />');
