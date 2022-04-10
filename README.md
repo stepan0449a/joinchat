@@ -1,1 +1,1 @@
-### JoinChat
+### JoinChat.
